@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("2022 Hello, World!");
+﻿// Sum of two integer numbers
+int numberA = 3;
+int numberB = 5;
+int result = numberA + numberB;
+Console.WriteLine(result);
