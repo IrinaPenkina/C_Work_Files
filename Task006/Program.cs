@@ -5,10 +5,15 @@
 // 34, 5 -> не кратно, остаток 4
 // 16, 4 -> кратно
 
+Console.WriteLine ("Введите два целых числа");
+
+Console.Write ("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write ("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-bool Multiplicity(int num1, num2)
+bool Multiplicity(int num1, int num2)
 {
     if (num1 % num2 == 0) return true;
     return false;
@@ -16,5 +21,5 @@ bool Multiplicity(int num1, num2)
 
 bool result = Multiplicity(number1, number2);
 
-Console.WriteLine(result ? "Кратно" : "Некратно, остаток = {number1 % number2}");
+Console.WriteLine(result ? "Кратно" : $"Некратно, остаток = {number1 % number2}");
 
