@@ -21,15 +21,14 @@ bool Multiplicity(int num1, int num2)
 
 int Remainder(int num1, int num2)
 {
-    int remainder = num1 / num2;
-    return remainder;
+    return num1 % num2;
 }
 
 bool multiplicity = Multiplicity(number1, number2);
-int output = Remainder(number1, number2);
+int remainder = Remainder(number1, number2);
 
 // Console.WriteLine(result ? "Кратно" : $"Некратно, остаток = {number1 % number2}");
 
 if (multiplicity == true) Console.WriteLine("Кратно");
-else Console.WriteLine($"Некратно, остаток = {output}");
+else Console.WriteLine($"Некратно, остаток = {remainder}");
 
