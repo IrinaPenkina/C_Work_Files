@@ -13,7 +13,6 @@
 // double nRound = Math.Round(n, 2, MidpointRounding.ToZero);
 // Console.WriteLine (nRound);
 
-
 Console.WriteLine("Введите кооринаты первой точки:  ");
 Console.Write ("XA: ");
 int xa = Convert.ToInt32(Console.ReadLine());
