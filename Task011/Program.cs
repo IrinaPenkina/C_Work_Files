@@ -2,9 +2,9 @@
 // 
 
 Console.WriteLine("Введите номер четверти: ");
-int num = Convert.ToInt32(Console.ReadLine());
+string num = Console.ReadLine();
 
-string Quarter (int number)
+string Quarter (string number)
 {
     if (number == 1) return "x > 0, y > 0";
     if (number == 2) return "x > 0, y < 0";
