@@ -22,3 +22,6 @@ int Digits (int num)
 if (number < 0) number = -number;
 int result = Digits(number);
 Console.WriteLine($"Количество цифр в числе {number} --> {result}");
+
+// Console.WriteLine(Math.Abs (-123));
+
