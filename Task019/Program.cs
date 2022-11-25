@@ -38,10 +38,15 @@ bool FindNumber (int[] arr, int num)
 
 int [] array = CreateArrayRndInt (4, -9, 9);
 PrintArray(array);
-FindNumber(array, 4);
-bool findNumber = FindNumber(array, 4);
-if (findNumber == true)  Console.WriteLine("Да");
- else Console.WriteLine("Нет");
+
+Console.WriteLine("Задайте число для сравнения с элементами массива");
+int number = Convert.ToInt32 (Console.ReadLine());
+FindNumber(array, number);
+bool findNumber = FindNumber(array, number);
+
+if (findNumber == true)  Console.WriteLine($"В массиве содержится число {number}");
+else Console.WriteLine($"В массиве не содержится число {number}");
+
 
 
 
