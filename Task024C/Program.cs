@@ -3,18 +3,25 @@
 
 string ConvertToBinary (int value)
 {
-    string bin = string.Empty;
+    string binary = string.Empty;
     while (value > 0)
     {
-        bin = value % 2 + bin;
+        binary = value % 2 + binary;
         value /= 2;
     }
-    return bin;
+    return binary;
 }
-
-
 
 Console.WriteLine("Задайте число: ");
 int decimalNumber = Convert.ToInt32(Console.ReadLine());
-string binaryNumber = ConvertToBinary(decimalNumber);
-Console.WriteLine($"{binaryNumber}");
+Console.WriteLine(ConvertToBinary(decimalNumber));
+
+
+// bool IsEven (int value)
+// {
+//     return value % 2 == 0;
+// }
+
+// Console.WriteLine("Задайте число:");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(IsEven(number));
